@@ -1,0 +1,13 @@
+/* @media (min-width: 768px) {
+  .col-md-5 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+} */
+
+.col-lg-5 {
+  @mixin atLarge {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}

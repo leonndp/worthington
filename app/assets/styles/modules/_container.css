@@ -1,0 +1,11 @@
+.container-sm {
+  max-width: 500px;
+}
+
+.container-md {
+  max-width: 720px;
+}
+
+.container-lg {
+  max-width: 960px;
+}

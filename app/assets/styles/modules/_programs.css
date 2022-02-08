@@ -1,0 +1,48 @@
+.programs {
+  background-size: cover;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-blend-mode: multiply;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    color: white;
+    background-color: var(--primary);
+
+    .programs__label {
+      visibility: hidden;
+      display: none;
+    }
+
+    .programs__description {
+      visibility: visible;
+      display: block;
+    }
+  }
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+
+  &__label {
+    visibility: visible;
+    display: block;
+  }
+
+  &__description {
+    visibility: hidden;
+    display: none;
+    text-align: center;
+  }
+}

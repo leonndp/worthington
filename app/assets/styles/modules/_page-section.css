@@ -1,0 +1,33 @@
+.page-section {
+    padding: 1.75rem 0;
+    background-color: $offWhite;
+    
+    @mixin atMedium {
+        padding: 4.5rem 0;
+    }
+
+    &--no-b-padding-until-medium {
+        padding-bottom: 0;
+
+        @mixin atMedium {
+            padding-bottom: 4.5em;
+        }
+    }
+
+    &--b-padding-extra {
+        padding-bottom: 6rem;
+    }
+
+    &--t-padding-extra {
+        padding-top: 6rem;
+    }
+    
+    &--blue {
+        background-color: $primary;
+        color:white;
+    }
+
+    &--full-white {
+        background-color: #fff;
+    }
+}

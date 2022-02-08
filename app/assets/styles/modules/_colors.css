@@ -1,0 +1,46 @@
+/* Text Color */
+.text-primary {
+  color: var(--primary) !important;
+}
+a.text-primary:hover {
+  color: var(--primary) !important;
+}
+.text-secondary {
+  color: var(--secondary) !important;
+}
+a.text-secondary:hover {
+  color: var(--secondary) !important;
+}
+.text-dark {
+  color: var(--dark) !important;
+}
+a.text-dark:hover {
+  color: var(--dark) !important;
+}
+
+/* Background Color */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+.bg-light {
+  background-color: var(--light) !important;
+}
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+.bg-blue {
+  background-color: #293259;
+}
+
+/* Border Color */
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+/* Icons */
+.fill-primary {
+  fill: var(--primary);
+}

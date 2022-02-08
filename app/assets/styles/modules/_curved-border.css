@@ -1,0 +1,38 @@
+.curved-border {
+  position: absolute;
+  z-index: -3;
+  width: 125%;
+  transform: translateX(-50%);
+  left: 50%;
+  margin: -150px 0;
+  height: 500px;
+  background-color: var(--dark);
+  overflow: hidden;
+
+  &--top {
+    border-top: 10px solid var(--primary) !important;
+    border-radius: 70% 70% 0 0 !important;
+    position: relative !important;
+    height: 300px !important;
+    border-bottom: 0px solid transparent !important;
+    margin: auto !important;
+    margin-bottom: -200px !important;
+  }
+}
+
+/* .curved-border-top {
+  position: relative;
+  z-index: -3;
+  width: 125%;
+  transform: translateX(-50%);
+  left: 50%;
+  
+} */
+
+@media (min-width: 768px) {
+  .curved-border {
+    border: 10px solid var(--primary);
+    height: 400px;
+    border-radius: 0 0 70% 70%;
+  }
+}

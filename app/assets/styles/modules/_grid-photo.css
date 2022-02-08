@@ -1,0 +1,123 @@
+.grid-photo {
+    display: grid;
+    
+    grid-gap: 0;
+    grid-template-rows: repeat(3, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "a"
+        "b"
+        "e";
+
+
+    @mixin atMedium {
+        grid-template-areas:
+            "a a a b b b b"
+            "a a a b b b b"
+            "d d d e e e e"
+            "d d d e e e e"
+            "d d d e e e e";
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, minmax(140px, 1fr));
+    }
+    
+    @mixin atLarge {        
+        grid-template-areas:
+            "a a a b b b b c c"
+            "a a a b b b b c c"
+            "d d d e e e e c c"
+            "d d d e e e e c c"
+            "d d d e e e e c c";
+        grid-template-columns: repeat(9, 1fr);
+
+    }
+
+    &__label {        
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+
+        @mixin atSmall {
+            white-space: nowrap;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__link {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        color: $secondary;
+        font-size: $font-xxs;
+        font-weight: bold;
+
+        @mixin atSmall {
+            font-size: $font-xs;
+        }
+
+        &:visited {
+            color: $secondary;
+        }
+    }
+
+    &__icon {
+        margin-bottom: 1rem;
+    }
+
+    &__section {
+        font-size: $font-xs;
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        @mixin atSmall {
+            font-size: $font-sm;
+        }
+    
+        &--display-at-medium {
+            display: none;
+            
+            @mixin atMedium {
+                display: block;
+            }
+        }
+
+        &--loan-programs {
+            background-image: url('assets/images/grid-photo-1-1.png');
+            background-color: #BEC2CD;
+            color: $mainGray;
+            grid-area: a;
+        }
+    
+        &--join-team {
+            background-image: url('assets/images/grid-photo-2-1.png');
+            grid-area: b;
+            color: $primary;
+        }
+    
+        &--mother {
+            background-image: url('assets/images/grid-photo-3.png');
+            grid-area: c;
+        }
+    
+        &--keys {
+            background-image: url('assets/images/grid-photo-4.png');
+            grid-area: d;
+        }
+    
+        &--perfect-loan {
+            background-image: url('assets/images/grid-photo-5-1.png');
+            grid-area: e;
+            color: $secondary;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.display-3 {
+  font-size: 2.5rem;
+
+  @mixin atMedium {
+    font-size: 4.5rem;
+  }
+}
+
+.display-4 {
+  font-size: 2.2rem;
+
+  @mixin atMedium {
+    font-size: 3.5rem;
+  }
+}

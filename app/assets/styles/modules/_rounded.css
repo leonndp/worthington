@@ -1,0 +1,13 @@
+.rounded {
+  border-radius: 20px !important;
+  overflow: hidden
+}
+
+.rounded--no-mobile {
+  border-radius: 0px !important;
+  overflow: hidden;
+
+  @mixin atSmall {
+    border-radius: 20px !important;
+  }
+}
